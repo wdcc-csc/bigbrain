@@ -22,3 +22,6 @@ describe("app test", () => {
     expect(screen.getByText('Vite + React')).toBeInTheDocument();
   });
 });
+import { useContext } from 'react';
+export const useAuth = () => useContext(AuthContext);
+
